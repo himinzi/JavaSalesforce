@@ -7,14 +7,16 @@ import ch18.sec07.exam02.ReadLineExample;
 public class BufferExample {
 	public static void main(String[] args) throws Exception {
 		//입출력 스트림 생성
-		String originalFilePath1 = ReadLineExample.class.getResource("originalFile1.jpg").getPath();
-		String targetFilePath1 = "C:/Temp/targetFile1.jpg";
+		String originalFilePath1 = BufferExample.class.getResource("originalFile1.jpg").getPath();
+//		String originalFilePath1 = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec07/exam01/originalFile1.jpg";
+		String targetFilePath1 = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec07/exam01/targetFile1.jpg";
 		FileInputStream fis = new FileInputStream(originalFilePath1);
 		FileOutputStream fos = new FileOutputStream(targetFilePath1);
 		
 		//입출력 스트림 + 버퍼 스트림 생성
-		String originalFilePath2 = ReadLineExample.class.getResource("originalFile2.jpg").getPath();
-		String targetFilePath2 = "C:/Temp/targetFile2.jpg";
+		String originalFilePath2 = BufferExample.class.getResource("originalFile2.jpg").getPath();
+//		String originalFilePath2 = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec07/exam01/originalFile2.jpg";
+		String targetFilePath2 = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec07/exam01/targetFile2.jpg";
 		FileInputStream fis2 = new FileInputStream(originalFilePath2);
 		FileOutputStream fos2 = new FileOutputStream(targetFilePath2);
 		BufferedInputStream bis = new BufferedInputStream(fis2);

@@ -5,7 +5,7 @@ import java.util.TimeZone;
 
 public class LosAngelesExample {
 	public static void main(String[] args) {
-		TimeZone timeZone = TimeZone.getTimeZone("America/Los_Angeles");
+		TimeZone timeZone = TimeZone.getTimeZone("America/Los_Angeles"); // 타국가 시간 설정
 		Calendar now = Calendar.getInstance( timeZone );
 		
 		int amPm  = now.get(Calendar.AM_PM);   

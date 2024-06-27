@@ -17,10 +17,10 @@ public class RandomExample {
 		
 		//당첨번호
 		int[] winningNumber = new int[6];
-		random = new Random(5);
+		random = new Random(5); // random class
 		System.out.print("당첨 번호: ");
 		for(int i=0; i<6; i++) {
-			winningNumber[i] = random.nextInt(45) + 1;
+			winningNumber[i] = random.nextInt(45) + 1; 
 			System.out.print(winningNumber[i] + " ");
 		}
 		System.out.println();

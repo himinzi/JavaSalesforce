@@ -11,7 +11,7 @@ public class OptionalExample {
 		/*//예외 발생(java.util.NoSuchElementException)
 		double avg = list.stream()
 			.mapToInt(Integer :: intValue)
-			.average()	
+			.average()			// 오류 발생 시점
 			.getAsDouble(); 
 		*/
 		
@@ -36,7 +36,7 @@ public class OptionalExample {
 		list.stream()
 			.mapToInt(Integer :: intValue)
 			.average()
-			.ifPresent(a -> System.out.println("방법3_평균: " + a));
+			.ifPresent(a -> System.out.println("방법3_평균: " + a)); // 결과값이 있으면 출력
 	}
 }
 

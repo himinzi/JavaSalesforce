@@ -24,26 +24,48 @@ public class MinusArray {
 				if (arr[i] < min) {
 					min = arr[i];
 					idx = i;
-
 				}
 			}
-			
 
 			answer = new int[arr.length - 1];
-			int a=0;
 			
-			for (int i = 0; i < answer.length; i++) { // 전체 min -1
-				for (int j = i; j < arr.length; j++) { // 전체
-					a = j;
-					if (j == idx) {
-						break;
-					}
+			int where = 0;
+			
+			for(int i=0; i<arr.length; i++) {
+				//answer 배열을 돌면서, 해당 idx가 나오면 제외하고 값 넣어주기!
+				
+				if(i == idx) {
+					continue;
 				}
-				answer[i] = a;
+	
+				answer[where] = arr[i];
+				
+				where ++;
+				
 			}
 
-
 			return answer;
+			
+//			if(arr.length == 1){
+//		          int[] answer = {-1};
+//		          return answer;
+//		      }
+//
+//		      int[] answer = new int[arr.length-1];
+//		      int minIndex=0;
+//
+//		      for(int i=0;i<arr.length;i++){
+//		          if(arr[minIndex]>arr[i]){
+//		              minIndex = i;
+//		          }
+//		      }
+//		      for(int i=minIndex+1;i<arr.length;i++){
+//		          arr[i-1] = arr[i];
+//		      }
+//		      for(int i=0;i<answer.length;i++){
+//		          answer[i] = arr[i];
+//		      }
+//		      return answer;
 		}
 	}
 

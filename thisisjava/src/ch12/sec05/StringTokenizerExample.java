@@ -12,7 +12,13 @@ public class StringTokenizerExample {
 		System.out.println();		
 		
 		String data2 = "홍길동/이수홍/박연수";
+//		String data2 = "홍길동 이수홍 박연수";
+		
 		StringTokenizer st = new StringTokenizer(data2, "/");
+//		StringTokenizer st = new StringTokenizer(data2); // 공백은 값을 안 줘도 됨!!
+		
+//		System.out.println(st.countTokens());
+//		System.out.println(st.nextToken());
 		while (st.hasMoreTokens()) {
 			String token = st.nextToken();
 			System.out.println(token);

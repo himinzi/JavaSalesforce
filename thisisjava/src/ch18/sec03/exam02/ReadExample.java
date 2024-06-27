@@ -8,7 +8,7 @@ import java.io.InputStream;
 public class ReadExample {
 	public static void main(String[] args) {
 		try {
-			InputStream is = new FileInputStream("C:/Temp/test2.db");
+			InputStream is = new FileInputStream("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec02/exam02/test2.db");
 			
 			byte[] data = new byte[100];
 			

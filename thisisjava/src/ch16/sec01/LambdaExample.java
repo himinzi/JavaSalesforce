@@ -2,11 +2,11 @@ package ch16.sec01;
 
 public class LambdaExample {
 	public static void main(String[] args) {
-		action((x, y) -> {
+		action((x, y) -> { // 굳이 클래스를 만들지 말고, 람다식 만들자!
 			int result = x + y;
 			System.out.println("result: " + result);
 		});
-		
+
 		action((x, y) -> {
 			int result = x - y;
 			System.out.println("result: " + result);
@@ -14,11 +14,10 @@ public class LambdaExample {
 	}
 
 	public static void action(Calculable calculable) {
-		//데이터
+		// 데이터
 		int x = 10;
 		int y = 4;
-		//데이터 처리
+		// 데이터 처리
 		calculable.calculate(x, y);
 	}
 }
-

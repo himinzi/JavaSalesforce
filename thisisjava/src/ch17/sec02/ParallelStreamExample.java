@@ -18,6 +18,7 @@ public class ParallelStreamExample {
 		Stream<String> parallelStream = list.parallelStream();
 		parallelStream.forEach(name -> {
 			System.out.println(name + ": " + Thread.currentThread().getName());
+			// main thread 랑 나머지 thread 가 나눠서 처리함.
 		});
 	}
 }

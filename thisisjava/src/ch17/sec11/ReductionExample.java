@@ -19,7 +19,8 @@ public class ReductionExample {
 		//방법2
 		int sum2 = studentList.stream()
 						.map(Student :: getScore)
-						.reduce(0, (a, b) -> a+b);
+						.reduce(0, (a, b) -> a+b); 
+						// stream 에 요소가 없을 경우, default 결과 값 설정
 		
 		System.out.println("sum1: " + sum1);
 		System.out.println("sum2: " + sum2);

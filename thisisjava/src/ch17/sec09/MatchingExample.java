@@ -6,6 +6,7 @@ public class MatchingExample {
 	public static void main(String[] args) {
 		int[] intArr = { 2, 4 ,6 };
 		
+		// 요소 조건 만족 여부 (true or false 반환)
 		boolean result = Arrays.stream(intArr)
 			.allMatch(a -> a%2==0);
 		System.out.println("모두 2의 배수인가? " + result);

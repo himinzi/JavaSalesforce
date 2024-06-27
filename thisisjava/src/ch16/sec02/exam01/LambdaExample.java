@@ -6,6 +6,7 @@ public class LambdaExample {
 		
 		//실행문이 두개 이상인 경우 중괄호 필요
 		person.action(() -> {
+			// 아직 구현되지 않은 work 함수를 정의
 			System.out.println("출근을 합니다.");
 			System.out.println("프로그래밍을 합니다.");
 		});

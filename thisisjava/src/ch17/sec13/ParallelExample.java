@@ -11,7 +11,7 @@ public class ParallelExample {
 		
 		List<Integer> scores = new ArrayList<>();
 		for(int i=0; i<100000000; i++) {
-			scores.add(random.nextInt(101));
+			scores.add(random.nextInt(101)); // 101 미만의 난수 반환
 		}
 		
 		double avg = 0.0;

@@ -24,5 +24,6 @@ public class CollectExample {
 		
 		List<Student> femaleList = map.get("여");
 		femaleList.stream().forEach(s -> System.out.println(s.getName()));
+		
 	}
 }

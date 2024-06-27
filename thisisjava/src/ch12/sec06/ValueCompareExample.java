@@ -5,8 +5,12 @@ public class ValueCompareExample {
 		//-128~127 초과값일 경우
 		Integer obj1 = 300;
 		Integer obj2 = 300;
-		System.out.println("==: " + (obj1 == obj2));
-		System.out.println("equals(): " + obj1.equals(obj2));
+		System.out.println("==: " + (obj1 == obj2));  // 범위값을 초과해버리면, 새로운 객체를 만들어버림
+		System.out.println("equals(): " + obj1.equals(obj2)); 
+		
+		System.out.println("obj1 => " + obj1);
+		System.out.println("obj2 => " + obj2);
+		
 		System.out.println();
 		
 		//-128~127 범위값일 경우

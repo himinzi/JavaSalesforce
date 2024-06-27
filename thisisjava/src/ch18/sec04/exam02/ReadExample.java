@@ -11,7 +11,7 @@ public class ReadExample {
 			Reader reader = null;
 			
 			//1문자씩 읽기
-			reader = new FileReader("C:/Temp/test.txt");
+			reader = new FileReader("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec04/exam01/test.txt");
 			while(true) {
 				int data = reader.read();
 				if(data == -1) break;
@@ -21,11 +21,14 @@ public class ReadExample {
 			System.out.println();
 			
 			//문자 배열로 읽기
-			reader = new FileReader("C:/Temp/test.txt");
+			reader = new FileReader("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec04/exam01/test.txt");
 			char[] data = new char[100];
 			while(true) {
 				int num = reader.read(data);
 				if(num == -1) break;
+//				for(int i=0; i<100; i++) { => ASCII code 0번이 찍힘 => null(그냥 null 이랑은 다름)
+//					System.out.print(data[i]);
+//				}
 				for(int i=0; i<num; i++) {
 					System.out.print(data[i]);
 				}

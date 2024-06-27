@@ -9,5 +9,7 @@ public class ErrExample {
 			System.err.println("[에러 내용]");
 			System.err.println(e.getMessage());
 		}
+		
+//		int value = Integer.parseInt("1oo");
 	}
 }

@@ -8,10 +8,10 @@ import java.util.Set;
 
 public class HashMapExample {
 	public static void main(String[] args) {
-		// Map 컬렉션 생성
+		// Map 컬렉션 생성 : Key 와 Value 로 구성된 Entry 객체를 저장
 		Map<String, Integer> map = new HashMap<>();
 
-		// 객체 저장
+		// 객체 저장 // 값을 넣어주지 않으면 null 을 리턴
 		map.put("신용권", 85);
 		map.put("홍길동", 90);
 		map.put("동장군", 80);
@@ -22,7 +22,7 @@ public class HashMapExample {
 		// 키로 값 얻기
 		String key = "홍길동";
 		int value = map.get(key);
-		System.out.println(key + ": " + map.get("홍길동"));
+		System.out.println(key + ": " + value);
 		System.out.println();
 
 		// 키 Set 컬렉션을 얻고, 반복해서 값 얻기
@@ -30,7 +30,7 @@ public class HashMapExample {
 		Iterator<String> keyIterator = keySet.iterator();
 		while (keyIterator.hasNext()) {
 			String k = keyIterator.next();
-			Integer v = map.get(key);
+			Integer v = map.get(k);
 			System.out.println(k + " : " + v);
 		}
 		System.out.println();

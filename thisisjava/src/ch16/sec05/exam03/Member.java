@@ -16,7 +16,8 @@ public class Member {
 	}
 	
 	@Override
-	public String toString() {
+	public String toString() { 
+		// Object 의 toString 메소드 Overriding => 원래는 hashCode 로 나옴
 		String info = "{ id: " + id + ", name: " + name + " }";
 		return info;		
 	}

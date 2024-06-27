@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class ObjectInputOutputStreamExample {
 	public static void main(String[] args) throws Exception {
 		//FileOutputStream에 ObjectOutputStream 보조 스트림 연결
-		FileOutputStream fos = new FileOutputStream("C:/Temp/object.dat");
+		FileOutputStream fos = new FileOutputStream("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec10/object.dat");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);	
 		
 		//객체 생성
@@ -25,7 +25,7 @@ public class ObjectInputOutputStreamExample {
 		oos.flush();	oos.close(); fos.close();
 		
 		//FileInputStream에 ObjectInputStream 보조 스트림 연결
-		FileInputStream fis = new FileInputStream("C:/Temp/object.dat");
+		FileInputStream fis = new FileInputStream("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec10/object.dat");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
 		//파일을 읽고 역질렬화해서 객체로 복원

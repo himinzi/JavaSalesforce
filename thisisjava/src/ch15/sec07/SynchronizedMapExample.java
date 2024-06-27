@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class SynchronizedMapExample {
 	public static void main(String[] args) {
-		//Map 컬렉션 생성
+		//Map 컬렉션 생성 // Thread 가 safe 하게 만들기 위해 synchronizedMap 해야 됨!!(저장 시 안전. 읽기X)
 		Map<Integer, String> map = Collections.synchronizedMap(new HashMap<>());
 	
 		//작업 스레드 객체 생성

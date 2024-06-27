@@ -12,6 +12,7 @@ public class GetClassExample {
 		//Car car = new Car();
 		//Class clazz = car.getClass();
 		
+		System.out.println("패키지: " + clazz.getPackage());
 		System.out.println("패키지: " + clazz.getPackage().getName());
 		System.out.println("클래스 간단이름: " + clazz.getSimpleName());
 		System.out.println("클래스 전체이름: " + clazz.getName());

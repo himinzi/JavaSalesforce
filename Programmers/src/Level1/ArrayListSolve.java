@@ -1,8 +1,6 @@
 package Level1;
 
-import java.util.Arrays;
-
-public class ArrayList {
+public class ArrayListSolve {
 	public static void main(String[] args) {
 		int[] arr = { 5, 9, 20, 1, 15 };
 		System.out.println(Solution.solution(arr, 5));

@@ -17,7 +17,7 @@ public class CharacterConvertStreamExample {
 	}
 	
 	public static void write(String str) throws Exception {
-		OutputStream os = new FileOutputStream("C:/Temp/test.txt");
+		OutputStream os = new FileOutputStream("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec06/test.txt");
 		Writer writer = new OutputStreamWriter(os, "UTF-8");
 		writer.write(str);
 		writer.flush();
@@ -25,7 +25,7 @@ public class CharacterConvertStreamExample {
 	}
 	
 	public static String read() throws Exception {
-		InputStream is = new FileInputStream("C:/Temp/test.txt");
+		InputStream is = new FileInputStream("C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec06/test.txt");
 		Reader reader = new InputStreamReader(is, "UTF-8");		
 		char[] data = new char[100];
 		int num = reader.read(data);

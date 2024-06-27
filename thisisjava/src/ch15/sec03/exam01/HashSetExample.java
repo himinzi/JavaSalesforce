@@ -19,4 +19,3 @@ public class HashSetExample {
 		System.out.println("총 객체수: " + size);
 	}
 }
-

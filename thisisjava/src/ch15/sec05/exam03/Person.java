@@ -1,5 +1,6 @@
 package ch15.sec05.exam03;
 
+//	본인을 인터베이스로 씀 
 public class Person implements Comparable<Person> {
 	public String name;
 	public int age;

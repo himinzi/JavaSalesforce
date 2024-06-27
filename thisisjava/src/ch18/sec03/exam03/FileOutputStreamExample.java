@@ -7,8 +7,8 @@ import java.io.OutputStream;
 
 public class FileOutputStreamExample {
 	public static void main(String[] args) throws Exception {
-		String originalFileName = "C:/Temp/test.jpg";
-		String targetFileName = "C:/Temp/test2.jpg";
+		String originalFileName = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec03/exam03/test.txt";
+		String targetFileName = "C:/Users/User/git/JavaSalesforce/thisisjava/src/ch18/sec03/exam03/test3.txt";
 		
 		InputStream is = new FileInputStream(originalFileName);
 		OutputStream os = new FileOutputStream(targetFileName);
@@ -20,7 +20,7 @@ public class FileOutputStreamExample {
 			os.write(data, 0, num);
 		}*/
 		
-		is.transferTo(os);
+		is.transferTo(os); // 복사 
 		
 		os.flush();
 		os.close();
@@ -29,4 +29,3 @@ public class FileOutputStreamExample {
 		System.out.println("복사가 잘 되었습니다.");
 	}
 }
-

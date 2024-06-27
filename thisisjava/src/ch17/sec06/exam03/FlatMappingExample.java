@@ -15,8 +15,14 @@ public class FlatMappingExample {
 			.forEach(word -> System.out.println(word));
 		
 		System.out.println();
-
-		//문자열 숫자 목록 스트림을 숫자 스트림으로 변환
+		
+		// trim
+//		String s = "dd";
+//		s.trim();
+//		System.out.println(s);
+//		문자열 숫자 목록 스트림을 숫자 스트림으로 변환
+		
+		
 		List<String> list2 = Arrays.asList("10, 20, 30", "40, 50");
 		list2.stream()
 			.flatMapToInt(data -> {

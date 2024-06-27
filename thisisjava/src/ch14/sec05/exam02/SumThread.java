@@ -1,5 +1,6 @@
 package ch14.sec05.exam02;
 
+//Thread 상속
 public class SumThread extends Thread {	
 	private long sum;
 	

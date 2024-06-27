@@ -14,7 +14,9 @@ public class StreamExample {
 		}
 		
 		//객체 스트림 얻기
-		Stream<Product> stream = list.stream();
+		Stream<Product> stream = list.stream(); // method chaining
 		stream.forEach(p -> System.out.println(p));
+		// println method 내부에 
+		// object 의 toString 메소드를 호출하게 되어있음!!
 	}
 }

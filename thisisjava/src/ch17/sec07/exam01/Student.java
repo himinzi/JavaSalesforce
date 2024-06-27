@@ -12,7 +12,7 @@ public class Student implements Comparable<Student> {
 	public String getName() { return name; }
 	public int getScore() { return score; }
 
-	@Override
+	@Override // 구현을 해야만 쓸 수 있음!
 	public int compareTo(Student o) {
 		return Integer.compare(score, o.score);
 	}

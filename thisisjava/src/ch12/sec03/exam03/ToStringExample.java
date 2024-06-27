@@ -6,8 +6,11 @@ public class ToStringExample {
 		
 		String strObj = myPhone.toString();
 		System.out.println(strObj);
-		
+
 		System.out.println(myPhone);
+		System.out.println(myPhone.toString());
+		
+		// 둘 다 같은 toString을 받음.
 	}
 }
 

@@ -26,7 +26,7 @@ public class CollectExample {
 		
 		System.out.println();
 		
-		//학생 이름을 키로 Student 객체를 값으로 갖는 Map 생성
+		//학생 이름을 key 로 Student 객체를 value 으로 갖는 Map 생성
 		Map<String, Integer> map = totalList.stream()
 				.collect(
 					Collectors.toMap(
@@ -35,6 +35,8 @@ public class CollectExample {
 					)
 				);
 		
-		System.out.println(map);
+		System.out.println(map.toString()); // Map 출력결과 => {오해영=93, 홍길동=92, 감자바=95, 김수영=87}
+		//Map 인터페이스의 구현체(대표적으로 HashMap 등)에서 toString을 호출하면 
+		//내부적으로 Map 을 탐색하는 Iterator 를 만들어 각 Entry 를 key=value 형식의 문자열로 변환
 	}
 }

@@ -20,7 +20,7 @@ public class TreeMapExample {
 		treeMap.put("guess", 70);
 		treeMap.put("cherry", 30);
 		
-		//정렬된 엔트리를 하나씩 가져오오기
+		//정렬된 엔트리를 하나씩 가져오오기 => ASCII 코드 값 기준
 		Set<Entry<String, Integer>> entrySet = treeMap.entrySet();
 		for(Entry<String, Integer> entry : entrySet) {
 			System.out.println(entry.getKey() + "-" + entry.getValue());

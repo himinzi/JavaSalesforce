@@ -22,7 +22,7 @@ public class StreamPipeLineExample {
 		
 		//방법2
 		double avg = list.stream()
-			.mapToInt(student -> student.getScore())
+			.mapToInt(student -> student.getScore()) 
 			.average()
 			.getAsDouble();
 		
